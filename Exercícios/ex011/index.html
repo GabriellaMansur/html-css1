@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente ver esssa imagem em dispositivos diferentes ou simplesmente aumente e diminua o tamnho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+
+    </picture>
+    <p>
+        tem que colocar da menor imagem para a maior
+
+    </p>
+    <h1>Como fazer isso??</h1>
+    <p><ul>
+        <li>Abrir tag picture</li>
+        <li>Mudar para max e colocar 50 pixels a mais do tamanho da imagem</li>
+        <li>Navegar pela pasta até achar a imagem, tem que digitar</li>
+        <li>Dentro dessa mesma tah colocar o type imagem/formato da imagem</li>
+    </ul></p>
+    <h1> Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Pinions - Freedom Trail Studio.mp3"  controls autoplay></audio>
+    <p>Para reproduzir o ádio colocar a tag audio midia, escolher o arquivo como ctrl espaço, seguido dos parâmetros controls e autoplay, mas fazer assim tem um problema de compatibilidade </p>
+
+    <audio preload="metadata"> <source src="midia/Pinions - Freedom Trail Studio.mp3" type="audio/mpeg"></audio>
+    <p>Desse segundo modo, seguir os sehuintes passos
+        <ul>
+            <li>Tag audio</li>
+            <li>Apagar tudo que estiver entre ela</li>
+            <li>Escolher o souuce src</li>
+            <li>Carregar o arquivo na pasta</li>
+            <li>No type colocra o tipo de arquivo. </li>
+            <li>Colocar na tag audio preload metadata</li>
+            <ol type="a">
+                <li>Para mp3 utilizar audio/mpeg</li>
+                <li>Para ogg, utilizar audio/ogg</li>
+                <li>Para wav, utilizar audio/wav</li>
+            </ol>
+        </ul>
+    </p>
+    <p>Importante notar quea ordem é relevante nesse caso, pois ele vai tentar carregar primeiro o tipo de arquivo que estiver no topo da lista. CAso o navegador não seja compatível com nenhum dos aquivos, escrever uma mensagem e deixar um link para baixar o audio</p>
+    <p>O seu navegador não consegue reproduzir o audio. <a href="midia/Pinions - Freedom Trail Studio.mp3">Clique aqui para baixar o MP3</a></p>
+
+
+    
+</body>
+</html>

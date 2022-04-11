@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        h1 { /* box-level*/
+
+            display: inline; /* se eu quiser fazer com que o h1 vire um inlinel level, sendo que ele é um box-level. Mesma coisa também vale ao contrário*/
+
+            background-color:lightcoral;
+            height: 300px;
+            width: 300px;
+
+            /* Dá para suar short hasnds aqui também, seeguindo exatemente essa ordem. Colocar só border e os demais  */
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(83, 33, 14);
+
+            padding-top: 10px; /* também tem o short hand, só padding e depois seguir essa ordem. E se como nesse caso todas as medidas forem iguais, basta colocar o valor só uma vez */
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;  /* essa configuração sempre deve ser feita dessa maneira, seguindo o sentido horário no quadrado do dev tools */
+
+            margin: auto; /*PARA DEIXAR A CAIXA NO MEIO. SE FOR TEXTO COLOCAR TEXT ALIGN CENTER*/
+
+            outline: 5px;
+            outline-style: dashed;
+            outline-style: blue;
+        }
+        
+        a { /* inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa de box-level</h1>
+    <p>Paraágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> </p>
+    
+</body>
+</html>

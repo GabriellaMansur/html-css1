@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*  Em HTML id = # em CSS
+    EM HTML class = . em CSS
+    Usar class para vários elementos, por exemplo h2 e h1
+    ID pode udar só em um
+    Dica: não classificar as coisa pela forma e sim pelo função
+*/
+body {
+    background-color: rgba(93, 196, 93, 0.952);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(47, 119, 24);
+}
+h1#principal {
+    color: aquamarine;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h2 {
+    color:rgb(26, 66, 12) ;
+}
+
+.basico {
+    color: pink;  /* para mudar a cor de um trecho do texto envelopar com span e colocar o class */
+    font-weight: bold;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(221, 221, 55, 0.856);
+}

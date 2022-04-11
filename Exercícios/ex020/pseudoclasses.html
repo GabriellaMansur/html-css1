@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block; /* tudo na mesma linha */
+            background-color: bisque;
+            text-align: center;
+            border: 1px solid black; /* isso é uma short hand, está combindando diversas características em uma linha só */
+            height: 200px;
+            width: 200px; /* largura e o se cima é altura */
+        }
+        
+    
+        /* Essa div hover faz com que quando passamos o cursor por cima, mude  de cor. Também  pode ser usada em animações do site para quando o cursor se aproximar*/
+        div:hover {
+            background-color: darksalmon;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div> 
+    <p>Div são um espaço qualquer no texto, nesse caso vai deixae um número em cada linha</p>
+    <h2>O que são pseudo-classes</h2>
+    <p> Representda por :, sempre tem que estar relacionas a um elemento ou a uma classe. Elas são relacionadas ao estado de um determinado elemento. Exemplo: se ele está atuco, marcado, habilitado</p>
+</body>
+</html>
+
+
+

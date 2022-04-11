@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightsalmon;
+            margin: 0px;
+        }
+
+        header {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: blueviolet;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline ;
+        }
+
+        main {
+            background-color: azure;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 12px 10px  12px 10px; /* deixar a borda arredondada */
+            box-shadow:  4px 4px 9px 0px rgba(0, 0, 0, 0.329);
+        }
+
+        article {
+            background-color: antiquewhite;
+        }
+
+        article > aside {
+            background-color: pink;
+            padding: 5px;
+            border-radius: 20px 0px; /* uma forma legal de borda */
+        }
+
+        footer {
+            background-color: black;
+            color: azure;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        footer {
+            margin: 0px;
+        }
+
+        div#bola {    /*fazendo uma boal */
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu primeiro site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o petróleo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ipsum porro sint praesentium provident fuga esse iure adipisci commodi dolorum? Reprehenderit non dolorem voluptates accusantium ipsum vitae quasi facilis illo.</p>
+                <aside>
+                    <p>ARTIGO escrito por Luis da Silva e Marina</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>Desenvolvido por Gabriella Mansur</p>
+    </footer>
+    <div id="bola"></div>
+        
+</body>
+</html>
